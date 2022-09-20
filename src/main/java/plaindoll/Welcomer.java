@@ -14,7 +14,7 @@ public class Welcomer{
 		return "something in the way";
 	}
 
-	public String saySome(){
+	public String saySomeIs(){
 		return "something in the way is";
 	}
 }
