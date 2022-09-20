@@ -55,6 +55,10 @@ object Build : BuildType({
             userSettingsSelection = "settings.xml"
         }
         maven {
+
+            conditions {
+                doesNotEqual("teamcity.build.branch", "feature/add_reply")
+            }
             goals = "clean deploy"
             userSettingsSelection = "settings.xml"
         }
