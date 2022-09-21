@@ -37,6 +37,7 @@ project {
 object Build : BuildType({
     name = "Build"
 
+    artifactRules = "src => src"
     publishArtifacts = PublishMode.SUCCESSFUL
 
     vcs {
