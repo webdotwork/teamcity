@@ -56,6 +56,10 @@ object Build : BuildType({
             userSettingsSelection = "settings.xml"
         }
         maven {
+
+            conditions {
+                doesNotEqual("env.BUILD_IS_PERSONAL", "true")
+            }
             goals = "clean deploy"
             userSettingsSelection = "settings.xml"
         }
